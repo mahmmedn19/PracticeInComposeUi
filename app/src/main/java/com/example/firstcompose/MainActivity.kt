@@ -38,7 +38,9 @@ fun Greeting() {
     )
 }
 
-@Preview(showSystemUi = true)
+//@Preview(showSystemUi = true)
+@Preview(name = "arabic",locale = "ar")
+@Preview(name = "english",locale = "en")
 @Composable
 fun PreviewMessage(){
     Greeting()

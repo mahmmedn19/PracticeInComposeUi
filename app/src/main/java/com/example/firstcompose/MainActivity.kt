@@ -1,5 +1,6 @@
 package com.example.firstcompose
 
+import android.content.res.Configuration
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -33,11 +34,11 @@ fun Greeting() {
 "Mohamed Naser",
         color = Color.Gray,
         fontFamily = FontFamily.SansSerif,
-        modifier = Modifier.background(Color.Black)
+        modifier = Modifier.background(Color.Transparent)
     )
 }
 
-@Preview
+@Preview(showSystemUi = true)
 @Composable
 fun PreviewMessage(){
     Greeting()

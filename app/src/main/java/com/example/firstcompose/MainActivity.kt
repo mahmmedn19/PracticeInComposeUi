@@ -15,9 +15,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.tooling.preview.Preview
-import androidx.compose.ui.unit.TextUnit
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -39,11 +39,12 @@ fun Greeting() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text(
-            "Mohamed Naser",
+            stringResource(id = R.string.app_name),
             color = Color.Gray,
             fontFamily = FontFamily.SansSerif,
             fontSize = 32.sp,
-            modifier = Modifier.background(Color.Transparent)
+            modifier = Modifier
+                .background(Color.Transparent)
                 .fillMaxSize()
                 .border(2.dp, Color.Black) // outer border
                 .background(Color.Cyan)
@@ -53,7 +54,7 @@ fun Greeting() {
                 .background(Color.Blue)
         )
         Text(
-            "Mohamed Naser",
+            stringResource(R.string.mohamed_naser),
             color = Color.Gray,
             fontFamily = FontFamily.SansSerif,
             fontSize = 32.sp,
@@ -66,6 +67,6 @@ fun Greeting() {
 
 @Preview(showSystemUi = true)
 @Composable
-fun PreviewMessage(){
+fun PreviewMessage() {
     Greeting()
 }

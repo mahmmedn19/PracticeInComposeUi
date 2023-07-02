@@ -24,6 +24,6 @@ fun ResizableImage(
             .size(size.dp)
             .clip(RoundedCornerShape(16.dp)),
         alignment = Alignment.Center,
-        contentScale = ContentScale.Inside
+        contentScale = ContentScale.Crop
     )
 }

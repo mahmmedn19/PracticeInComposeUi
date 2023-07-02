@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">FirstCompose</string>
+    <string name="mohamed_naser">Mohamed Naser</string>
+    <string name="smile">SMILE</string>
+    <string name="sad">SAD</string>
 </resources>

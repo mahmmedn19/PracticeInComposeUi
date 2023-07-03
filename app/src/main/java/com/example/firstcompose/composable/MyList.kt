@@ -7,14 +7,17 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
 import coil.compose.rememberImagePainter
+import com.example.firstcompose.viewModel.state.TextUiState
+import com.example.firstcompose.viewModel.state.TextUiStates
 
 @Composable
-fun MyList(dataList: List<String>) {
+fun MyListImage(dataList: List<String>) {
     LazyRow(modifier = Modifier.fillMaxWidth()) {
         items(dataList) { imageUrl ->
             ResizableImage(
@@ -27,3 +30,4 @@ fun MyList(dataList: List<String>) {
         }
     }
 }
+
